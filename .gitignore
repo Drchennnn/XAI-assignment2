@@ -1,0 +1,15 @@
+# Locally obtained ImageNet files and derived visual assets
+/member1/images/
+/member1/input_crops/
+/member1/contact_sheet.png
+/member1/gallery.html
+/member1/model_cache/
+/member1/predictions_rerun.csv
+/member1/predictions_rerun.metadata.json
+/member2/outputs/
+
+# Python and notebook runtime files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store

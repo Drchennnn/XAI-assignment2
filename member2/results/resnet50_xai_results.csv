@@ -1,0 +1,36 @@
+sample_id,group,true_class_idx,true_class,target_mode,target_class_idx,target_class,pred_class_idx,pred_class,confidence,correct,ig_convergence_delta_abs_mean,figure
+A01,A,65,sea snake,pred,65,sea snake,65,sea snake,0.5614798069000244,True,0.21692657470703125,A01_resnet50_xai_pred.png
+A02,A,334,porcupine,pred,334,porcupine,334,porcupine,0.9992243051528931,True,0.12178993225097656,A02_resnet50_xai_pred.png
+A03,A,674,mousetrap,pred,674,mousetrap,674,mousetrap,0.9932630658149719,True,0.4266948699951172,A03_resnet50_xai_pred.png
+A04,A,332,Angora,pred,332,Angora,332,Angora,0.7483366131782532,True,0.13239574432373047,A04_resnet50_xai_pred.png
+A05,A,109,brain coral,pred,109,brain coral,109,brain coral,0.9964250922203064,True,0.2814826965332031,A05_resnet50_xai_pred.png
+B01,B,230,Shetland sheepdog,pred,230,Shetland sheepdog,230,Shetland sheepdog,0.7389715313911438,True,0.8223752975463867,B01_resnet50_xai_pred.png
+B01,B,230,Shetland sheepdog,common_gt,230,Shetland sheepdog,230,Shetland sheepdog,0.7389715313911438,True,0.8223752975463867,B01_resnet50_xai_gt.png
+B02,B,809,soup bowl,pred,809,soup bowl,809,soup bowl,0.7369985580444336,True,0.9743213653564453,B02_resnet50_xai_pred.png
+B02,B,809,soup bowl,common_gt,809,soup bowl,809,soup bowl,0.7369985580444336,True,0.9743213653564453,B02_resnet50_xai_gt.png
+B03,B,725,pitcher,pred,725,pitcher,725,pitcher,0.35462144017219543,True,0.3019399642944336,B03_resnet50_xai_pred.png
+B03,B,725,pitcher,common_gt,725,pitcher,725,pitcher,0.35462144017219543,True,0.3019399642944336,B03_resnet50_xai_gt.png
+B04,B,46,green lizard,pred,46,green lizard,46,green lizard,0.6362459063529968,True,0.5721626281738281,B04_resnet50_xai_pred.png
+B04,B,46,green lizard,common_gt,46,green lizard,46,green lizard,0.6362459063529968,True,0.5721626281738281,B04_resnet50_xai_gt.png
+B05,B,780,schooner,pred,780,schooner,780,schooner,0.42251431941986084,True,0.5456533432006836,B05_resnet50_xai_pred.png
+B05,B,780,schooner,common_gt,780,schooner,780,schooner,0.42251431941986084,True,0.5456533432006836,B05_resnet50_xai_gt.png
+C01,C,846,table lamp,pred,583,guillotine,583,guillotine,0.9976164102554321,False,0.4935035705566406,C01_resnet50_xai_pred.png
+C01,C,846,table lamp,common_gt,846,table lamp,583,guillotine,0.9976164102554321,False,0.09906387329101562,C01_resnet50_xai_gt.png
+C02,C,858,tile roof,pred,538,dome,538,dome,0.5495595932006836,False,0.10590934753417969,C02_resnet50_xai_pred.png
+C02,C,858,tile roof,common_gt,858,tile roof,538,dome,0.5495595932006836,False,0.21927833557128906,C02_resnet50_xai_gt.png
+C03,C,150,sea lion,pred,360,otter,360,otter,0.6056205034255981,False,0.2728242874145508,C03_resnet50_xai_pred.png
+C03,C,150,sea lion,common_gt,150,sea lion,360,otter,0.6056205034255981,False,0.02647686004638672,C03_resnet50_xai_gt.png
+C04,C,358,polecat,pred,359,black-footed ferret,359,black-footed ferret,0.44739586114883423,False,0.275970458984375,C04_resnet50_xai_pred.png
+C04,C,358,polecat,common_gt,358,polecat,359,black-footed ferret,0.44739586114883423,False,0.2412281036376953,C04_resnet50_xai_gt.png
+C05,C,872,tripod,pred,840,swab,840,swab,0.9668259024620056,False,0.7498884201049805,C05_resnet50_xai_pred.png
+C05,C,872,tripod,common_gt,872,tripod,840,swab,0.9668259024620056,False,0.950592041015625,C05_resnet50_xai_gt.png
+D01,D,970,alp,pred,795,ski,795,ski,0.9440935254096985,False,0.5443630218505859,D01_resnet50_xai_pred.png
+D01,D,970,alp,common_gt,970,alp,795,ski,0.9440935254096985,False,0.024038314819335938,D01_resnet50_xai_gt.png
+D02,D,516,cradle,pred,520,crib,520,crib,0.45951589941978455,False,0.1351308822631836,D02_resnet50_xai_pred.png
+D02,D,516,cradle,common_gt,516,cradle,520,crib,0.45951589941978455,False,0.1500082015991211,D02_resnet50_xai_gt.png
+D03,D,57,garter snake,pred,65,sea snake,65,sea snake,0.39461827278137207,False,0.6849384307861328,D03_resnet50_xai_pred.png
+D03,D,57,garter snake,common_gt,57,garter snake,65,sea snake,0.39461827278137207,False,0.6790733337402344,D03_resnet50_xai_gt.png
+D04,D,415,bakery,pred,852,tennis ball,852,tennis ball,0.23552261292934418,False,0.2537660598754883,D04_resnet50_xai_pred.png
+D04,D,415,bakery,common_gt,415,bakery,852,tennis ball,0.23552261292934418,False,0.11422157287597656,D04_resnet50_xai_gt.png
+D05,D,108,sea anemone,pred,327,starfish,327,starfish,0.717538595199585,False,0.2757282257080078,D05_resnet50_xai_pred.png
+D05,D,108,sea anemone,common_gt,108,sea anemone,327,starfish,0.717538595199585,False,0.07861137390136719,D05_resnet50_xai_gt.png

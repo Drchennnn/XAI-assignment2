@@ -1,0 +1,45 @@
+{
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "torch": "2.14.1+cpu",
+  "torchvision": "0.29.1+cpu",
+  "device": "cpu",
+  "num_threads": 8,
+  "resnet50_weights": "ResNet50_Weights.IMAGENET1K_V1",
+  "mobilenetv3_weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V1",
+  "transforms": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "class_index_base": 0,
+  "confidence": "softmax probability of the top-1 predicted class",
+  "timing_seconds": 2.414,
+  "candidate_count": 128,
+  "group_counts": {
+    "A": 85,
+    "B": 11,
+    "C": 9,
+    "D": 23
+  },
+  "selected_count": 20,
+  "selected_counts": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "D": 5
+  },
+  "selection_rule": "Candidate pool = original validation image indices 1..128. In original numerical order, select the first 5 distinct ground-truth classes within each A/B/C/D group. No heatmaps or confidence ranking used.",
+  "group_definitions": {
+    "A": "both correct",
+    "B": "ResNet50 correct, MobileNetV3 wrong",
+    "C": "ResNet50 wrong, MobileNetV3 correct",
+    "D": "both wrong"
+  },
+  "primary_xai_target": "Each model own top-1 predicted class",
+  "supplementary_xai_target": "Same ground-truth class for both models on B/C/D",
+  "limitations": "Case selection is conditioned on prediction correctness; the selected 20 images cannot estimate population accuracy. The first 128 form a small, non-random candidate pool. Correctness uses the supplied dataset single-label ground truth.",
+  "local_date": "2026-10-29",
+  "hashes": {
+    "imagenet_class_index.json": "a1e7a966a1f601d39e4b43e119b3e7dd4a2ad3ea08cf69847cbaf021013767bc",
+    "validation_synset_labels.txt": "313fc3f23c864dde9183c9a368809065765dd1b657a6904fded44e3e46d34604",
+    "mobilenet_v3_large-8738ca79.pth": "8738ca797c879b547d18bbd15da5736ff2557b2036a9af72225393ca61759a04",
+    "resnet50-0676ba61.pth": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a"
+  }
+}
